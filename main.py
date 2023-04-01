@@ -8,6 +8,8 @@ nghia = []
 for data in datas:
     data = data.split("\t")
     kanji.append(data[0])
+    if data[1] == "":
+        data[1] = "NULL"
     nghia.append(data[1])
 
 # Main
